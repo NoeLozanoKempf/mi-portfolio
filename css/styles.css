@@ -5,25 +5,42 @@
     font-family: 'Nunito Sans', sans-serif;
     list-style: none;
 }
-.contenedor{
-  display: flex;
+p{
+  color: #fff;
 }
+
+h1, h2, h3, h4,h5,h6{
+  color: #fff;
+}
+
+.button_menu{
+  filter: invert(1);
+}
+
 .contenedor_menu {
   background-color: #333;
-  width: 25%;
   height: 100vh;
+}
+.contenedor_menu_mobile {
+  background-color: #333
+}
 
+.acerca_de_mi_imagen img{
+  display: block;
+  width: 285px;
+  height: 333px;
+}
+
+.acerca_de_mi_informacion ul li{
+  color:#fff;
+  list-style: disc;
 }
 
 .contenedor_contenido {
   overflow: hidden;
-  background-color: rgb(199, 218, 235);
-  width: 75%;
+  background-image: url(../imagenes/fondohome.png);
+  background-size: cover;
   height: 100vh;
-}
-.contenedor_contenido video {
-  height: 100%;
-  filter: grayscale(1);
 }
 .menu {
   color: aliceblue;
@@ -63,3 +80,27 @@ color: aliceblue;
   color: #cbf525;
   text-decoration: underline;
 }
+
+.foto_perfil{
+  text-align: right;
+  margin: 50px 100px 0px 0px;
+}
+
+.foto_perfil img {
+  width: 200px;
+}
+
+.herramientas_logos{
+  color:aliceblue;
+  display: flex;
+  gap: 20px;
+}
+
+.herramientas_logos li img{
+  width: 30px;
+}
+
+.informacion_perfil{
+  margin:0px 100px 50px 50px;
+}
+
