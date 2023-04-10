@@ -1,0 +1,172 @@
+@import "./colors";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+  list-style: none;
+}
+
+p {
+  color: #fff;
+  font-size: 18px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $verdeLima;
+}
+
+.button_menu {
+  filter: invert(1);
+}
+
+.contenedor {
+  &_menu {
+    background-color: $grisOscuro;
+    height: 100vh;
+
+    &_mobile {
+      background-color: $grisOscuro;
+    }
+  }
+  &_contenido {
+    overflow: hidden;
+    background-image: url(../imagenes/fondohome.png);
+    background-size: cover;
+    height: 100vh;
+    @media (max-width: 1360px){
+        overflow-y: scroll;
+        justify-content: flex-start;
+    }
+  }
+  &_trabajos {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    &_title {
+      width: 70%;
+    }
+  }
+  &_formulario{
+    width:90%;
+    margin-top:20px;
+    @media (min-width:900px) {
+      width:50%
+    }
+  }
+  &_recomendaciones{
+    height: 100vh;
+  }
+}
+
+.recomendaciones{
+  &_card{
+ min-width:300px;
+ max-height: 470px;
+ overflow: hidden;
+  }
+  
+}
+
+.acerca_de_mi {
+  &_imagen {
+    img {
+      display: block;
+      width: 285px;
+      height: 333px;
+    }
+   
+  }
+  &_informacion {
+    ul {
+      li {
+        color: #fff;
+        list-style: disc;
+      }
+    }
+  }
+}
+
+.menu {
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 190px;
+  margin: 100px auto;
+  a {
+    color: aliceblue;
+    text-decoration: none;
+  }
+  .activo {
+    color: $verdeLima;
+    text-decoration: underline;
+  }
+}
+
+.boton_descargar {
+  background-color: $verdeLima;
+  color: black;
+  border-radius: 40px;
+  display: inline-block;
+  height: 30px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.redes_sociales {
+  color: rgb(227, 235, 243);
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.redes_sociales {
+  a {
+    color: aliceblue;
+  }
+}
+
+.foto_perfil {
+  text-align: right;
+  margin: 50px 100px 0px 0px;
+}
+
+.foto_perfil {
+  img {
+    width: 200px;
+  }
+}
+
+.herramientas_logos {
+  color: aliceblue;
+  display: flex;
+  gap: 20px;
+}
+
+.herramientas_logos {
+  li {
+    img {
+      width: 30px;
+    }
+  }
+}
+
+.informacion_perfil {
+  margin: 0px 100px 50px 50px;
+}
+
+.card {
+  &_trabajos {
+    flex-basis: 285px;
+    height: 333px;
+  }
+}

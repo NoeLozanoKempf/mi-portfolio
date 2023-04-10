@@ -1,20 +1,26 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Nunito Sans', sans-serif;
-    list-style: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+  list-style: none;
 }
-p{
+
+p {
   color: #fff;
   font-size: 18px;
 }
 
-h1, h2, h3, h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #cbf525;
 }
 
-.button_menu{
+.button_menu {
   filter: invert(1);
 }
 
@@ -23,40 +29,76 @@ h1, h2, h3, h4,h5,h6{
   height: 100vh;
 }
 .contenedor_menu_mobile {
-  background-color: #333
+  background-color: #333;
 }
-
-.acerca_de_mi_imagen img{
-  display: block;
-  width: 285px;
-  height: 333px;
-}
-
-.acerca_de_mi_informacion ul li{
-  color:#fff;
-  list-style: disc;
-}
-
 .contenedor_contenido {
   overflow: hidden;
   background-image: url(../imagenes/fondohome.png);
   background-size: cover;
   height: 100vh;
 }
+@media (max-width: 1360px) {
+  .contenedor_contenido {
+    overflow-y: scroll;
+    justify-content: flex-start;
+  }
+}
+.contenedor_trabajos {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.contenedor_trabajos_title {
+  width: 70%;
+}
+.contenedor_formulario {
+  width: 90%;
+  margin-top: 20px;
+}
+@media (min-width: 900px) {
+  .contenedor_formulario {
+    width: 50%;
+  }
+}
+.contenedor_recomendaciones {
+  height: 100vh;
+}
+
+.recomendaciones_card {
+  min-width: 300px;
+  max-height: 470px;
+  overflow: hidden;
+}
+
+.acerca_de_mi_imagen img {
+  display: block;
+  width: 285px;
+  height: 333px;
+}
+.acerca_de_mi_informacion ul li {
+  color: #fff;
+  list-style: disc;
+}
+
 .menu {
   color: aliceblue;
   display: flex;
   flex-direction: column;
-gap: 20px;
-width: 190px;
-margin: 100px auto;
+  gap: 20px;
+  width: 190px;
+  margin: 100px auto;
 }
-.menu a{
+.menu a {
   color: aliceblue;
   text-decoration: none;
 }
+.menu .activo {
+  color: #cbf525;
+  text-decoration: underline;
+}
 
-.menu li .boton_descargar{
+.boton_descargar {
   background-color: #cbf525;
   color: black;
   border-radius: 40px;
@@ -65,7 +107,7 @@ margin: 100px auto;
   width: 150px;
   display: flex;
   justify-content: center;
-align-items: center;
+  align-items: center;
 }
 
 .redes_sociales {
@@ -74,15 +116,12 @@ align-items: center;
   gap: 20px;
   justify-content: center;
 }
-.redes_sociales a{
-color: aliceblue;
-}
-.menu li .activo{
-  color: #cbf525;
-  text-decoration: underline;
+
+.redes_sociales a {
+  color: aliceblue;
 }
 
-.foto_perfil{
+.foto_perfil {
   text-align: right;
   margin: 50px 100px 0px 0px;
 }
@@ -91,17 +130,21 @@ color: aliceblue;
   width: 200px;
 }
 
-.herramientas_logos{
-  color:aliceblue;
+.herramientas_logos {
+  color: aliceblue;
   display: flex;
   gap: 20px;
 }
 
-.herramientas_logos li img{
+.herramientas_logos li img {
   width: 30px;
 }
 
-.informacion_perfil{
-  margin:0px 100px 50px 50px;
+.informacion_perfil {
+  margin: 0px 100px 50px 50px;
 }
 
+.card_trabajos {
+  flex-basis: 285px;
+  height: 333px;
+}/*# sourceMappingURL=styles.css.map */
