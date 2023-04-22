@@ -49,10 +49,11 @@ h6 {
     width: 70%;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap:20px;
     &_title {
       width: 70%;
     }
+
   }
   &_formulario{
     width:90%;
@@ -69,8 +70,13 @@ h6 {
 .recomendaciones{
   &_card{
  min-width:300px;
- max-height: 470px;
+ max-height: 500px;
+ margin: 5px;
  overflow: hidden;
+ transition: all .3s ease-in-out;
+ &:hover{
+   transform: scale(1.05);
+ }
   }
   
 }
@@ -111,10 +117,11 @@ h6 {
   }
 }
 
-.boton_descargar {
+.boton{
   background-color: $verdeLima;
-  color: black;
+  color: black !important;
   border-radius: 40px;
+  border: none;
   display: inline-block;
   height: 30px;
   width: 150px;
@@ -152,10 +159,11 @@ h6 {
   gap: 20px;
 }
 
-.herramientas_logos {
+.herramientas_logos {  
+
   li {
     img {
-      width: 30px;
+      width: 50px;padding: 5px
     }
   }
 }
@@ -168,5 +176,9 @@ h6 {
   &_trabajos {
     flex-basis: 285px;
     height: 333px;
+    transition: all .3s ease-in-out;
+    &:hover{
+      transform: scale(1.1);
+    }
   }
 }
